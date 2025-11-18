@@ -5,7 +5,7 @@ const ImageWithFallback = ({ src, alt, className, placeholderText }) => {
 
   if (hasError) {
     return (
-      <div className={`${className} bg-purple-primary flex items-center justify-center`}>
+      <div className={`${className} bg-brand-graphite flex items-center justify-center`}>
         <div className="text-white text-center p-4">
           <div className="text-sm font-semibold">{placeholderText || 'Image'}</div>
           <div className="text-xs text-gray-400 mt-1">Placeholder - Add image later</div>

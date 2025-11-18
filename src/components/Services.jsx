@@ -10,11 +10,11 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="bg-gradient-to-b from-purple-dark to-purple-primary py-20 md:py-32 relative overflow-hidden">
+    <section id="services" className="bg-gradient-to-b from-brand-ink to-brand-charcoal py-20 md:py-32 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-magenta-bright rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-magenta-accent rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-purple/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-purple-soft/15 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -32,10 +32,10 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_0_40px_rgba(255,0,255,0.3)] transition-all duration-500 transform hover:-translate-y-3 border border-white/10 hover:border-magenta-bright/50"
+              className="group bg-brand-graphite/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl transition-all duration-500 transform hover:-translate-y-3 border border-brand-line/60 hover:border-brand-purple"
             >
               <div className="relative h-72 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/80 to-transparent z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/85 to-transparent z-10"></div>
                 <ImageWithFallback
                   src={service.image}
                   alt={service.name}
@@ -43,8 +43,8 @@ const Services = () => {
                   placeholderText={service.name}
                 />
               </div>
-              <div className="p-8 bg-gradient-to-b from-purple-primary/50 to-purple-dark/50">
-                <h3 className="text-xl font-extrabold text-white text-center uppercase tracking-wide">{service.name}</h3>
+              <div className="p-8 bg-brand-charcoal/80">
+                <h3 className="text-xl font-semibold text-white text-center uppercase tracking-wide">{service.name}</h3>
               </div>
             </div>
           ))}

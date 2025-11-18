@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <section 
       id="about"
-      className="relative py-20 md:py-32 bg-purple-dark overflow-hidden"
+      className="relative py-20 md:py-32 bg-brand-ink overflow-hidden"
       style={{
         backgroundImage: 'url(/images/about-bg.jpg)',
         backgroundSize: 'cover',
@@ -12,12 +12,12 @@ const AboutSection = () => {
       }}
     >
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-primary/95 via-purple-primary/90 to-purple-dark/95"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-charcoal/95 via-brand-ink/92 to-brand-charcoal/98"></div>
 
-      {/* Animated Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-magenta-bright rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-magenta-accent rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1.5s' }}></div>
+      {/* Accent lights */}
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-brand-purple/25 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-brand-purple-soft/25 rounded-full blur-3xl" style={{ animationDelay: '1.5s' }}></div>
       </div>
 
       {/* Content */}
@@ -25,7 +25,7 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
             Roofing with Purpose –<br />
-            <span className="bg-gradient-to-r from-white via-magenta-bright to-white bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-brand-purple to-brand-purple-soft bg-clip-text text-transparent">
               Because We Aspire 4 More
             </span>
           </h2>
@@ -38,8 +38,8 @@ const AboutSection = () => {
         {/* Three Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
           {/* Mission Card */}
-          <div className="bg-white/5 backdrop-blur-md rounded-3xl p-10 border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all duration-500 hover:bg-white/10 hover:shadow-2xl hover:shadow-magenta-bright/20 transform hover:-translate-y-2">
-            <div className="text-magenta-bright mb-6">
+          <div className="bg-brand-graphite/70 backdrop-blur-md rounded-2xl p-10 border border-brand-line/60 hover:border-brand-purple transition-all duration-500 hover:bg-brand-graphite/60 hover:shadow-2xl hover:shadow-brand-purple/20 transform hover:-translate-y-2">
+            <div className="text-brand-purple mb-6">
               <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -52,8 +52,8 @@ const AboutSection = () => {
           </div>
 
           {/* Innovation Card */}
-          <div className="bg-white/5 backdrop-blur-md rounded-3xl p-10 border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all duration-500 hover:bg-white/10 hover:shadow-2xl hover:shadow-magenta-bright/20 transform hover:-translate-y-2">
-            <div className="text-magenta-bright mb-6">
+          <div className="bg-brand-graphite/70 backdrop-blur-md rounded-2xl p-10 border border-brand-line/60 hover:border-brand-purple transition-all duration-500 hover:bg-brand-graphite/60 hover:shadow-2xl hover:shadow-brand-purple/20 transform hover:-translate-y-2">
+            <div className="text-brand-purple mb-6">
               <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
               </svg>
@@ -66,8 +66,8 @@ const AboutSection = () => {
           </div>
 
           {/* Support Card */}
-          <div className="bg-white/5 backdrop-blur-md rounded-3xl p-10 border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all duration-500 hover:bg-white/10 hover:shadow-2xl hover:shadow-magenta-bright/20 transform hover:-translate-y-2">
-            <div className="text-magenta-bright mb-6">
+          <div className="bg-brand-graphite/70 backdrop-blur-md rounded-2xl p-10 border border-brand-line/60 hover:border-brand-purple transition-all duration-500 hover:bg-brand-graphite/60 hover:shadow-2xl hover:shadow-brand-purple/20 transform hover:-translate-y-2">
+            <div className="text-brand-purple mb-6">
               <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
               </svg>

@@ -50,7 +50,7 @@ const Hero = () => {
   return (
     <section 
       id="home"
-      className="relative w-full min-h-[90vh] flex items-center justify-center bg-purple-dark overflow-hidden"
+      className="relative w-full min-h-[90vh] flex items-center justify-center bg-brand-ink overflow-hidden"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
@@ -98,30 +98,30 @@ const Hero = () => {
       </div>
 
       {/* Gradient Overlay - Minimal to show images clearly */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-primary/15 via-purple-primary/10 to-purple-dark/20 z-10"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-charcoal/80 via-brand-ink/70 to-brand-charcoal/80 z-10"></div>
       
-      {/* Animated Background Elements - Reduced opacity */}
+      {/* Subtle accent lights */}
       <div className="absolute inset-0 overflow-hidden z-10 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-magenta-bright/5 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-magenta-accent/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brand-purple/15 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-purple-soft/10 rounded-full blur-3xl"></div>
       </div>
 
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
-        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full p-3 md:p-4 transition-all duration-300 group border border-white/20 hover:border-white/40"
+        className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/5 hover:bg-white/15 backdrop-blur-md rounded-full p-3 md:p-4 transition-all duration-300 group border border-white/10 hover:border-white/30"
         aria-label="Previous slide"
       >
-        <svg className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-magenta-bright transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-brand-purple transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full p-3 md:p-4 transition-all duration-300 group border border-white/20 hover:border-white/40"
+        className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/5 hover:bg-white/15 backdrop-blur-md rounded-full p-3 md:p-4 transition-all duration-300 group border border-white/10 hover:border-white/30"
         aria-label="Next slide"
       >
-        <svg className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-magenta-bright transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-brand-purple transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
@@ -131,14 +131,14 @@ const Hero = () => {
         <div className="animate-slide-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
             STRONGER ROOFS,<br />
-            <span className="bg-gradient-to-r from-white via-magenta-bright to-white bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-brand-purple to-brand-purple-soft bg-clip-text text-transparent">
               BUILT RIGHT THE FIRST TIME
             </span>
           </h1>
         </div>
         
-        <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-10 mb-10 max-w-4xl mx-auto border border-white/10 shadow-2xl animate-slide-up" style={{ animationDelay: '0.2s' }}>
-          <p className="text-white text-xl md:text-2xl leading-relaxed font-light">
+        <div className="bg-brand-graphite/85 backdrop-blur-xl rounded-2xl p-8 md:p-10 mb-10 max-w-4xl mx-auto border border-brand-line/60 card-shadow animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-brand-steel text-xl md:text-2xl leading-relaxed font-light">
             From shingle and tile to metal and flat roofs, we handle everything—permits, inspection, installation, and cleanup. 
             Your trusted roofing partner for quality workmanship and reliable service.
           </p>
@@ -147,7 +147,7 @@ const Hero = () => {
         <div className="animate-slide-up" style={{ animationDelay: '0.4s' }}>
           <a 
             href="#contact"
-            className="inline-block bg-gradient-to-r from-magenta-bright to-magenta-accent hover:from-magenta-accent hover:to-magenta-bright text-white font-bold py-5 px-10 md:py-6 md:px-14 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 shadow-2xl glow-hover uppercase tracking-wide"
+            className="inline-block bg-brand-purple hover:bg-brand-purple-soft text-white font-semibold py-5 px-10 md:py-6 md:px-14 rounded-lg text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
           >
             CALL US FOR FREE ESTIMATE →
           </a>
@@ -161,7 +161,7 @@ const Hero = () => {
           <div className="w-64 h-1 bg-white/20 rounded-full overflow-hidden backdrop-blur-sm">
             <div 
               key={currentSlide}
-              className="h-full bg-gradient-to-r from-magenta-bright to-magenta-accent animate-progress"
+              className="h-full bg-gradient-to-r from-brand-purple to-brand-purple-soft animate-progress"
             />
           </div>
         )}
@@ -174,8 +174,8 @@ const Hero = () => {
               onClick={() => goToSlide(index)}
               className={`transition-all duration-300 rounded-full ${
                 index === currentSlide
-                  ? 'w-12 h-3 bg-white shadow-lg shadow-magenta-bright/50'
-                  : 'w-3 h-3 bg-white/40 hover:bg-white/60'
+                  ? 'w-12 h-3 bg-white shadow-lg shadow-brand-purple/30'
+                  : 'w-3 h-3 bg-white/30 hover:bg-white/60'
               }`}
               aria-label={`Go to slide ${index + 1}`}
             />

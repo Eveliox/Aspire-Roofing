@@ -15,17 +15,17 @@ const Gallery = () => {
   }
 
   return (
-    <section id="gallery" className="bg-gradient-to-b from-purple-primary to-purple-dark py-20 md:py-32 relative overflow-hidden">
+    <section id="gallery" className="bg-gradient-to-b from-brand-charcoal to-brand-ink py-20 md:py-32 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-magenta-bright rounded-full blur-3xl animate-pulse-slow"></div>
+      <div className="absolute inset-0 opacity-15">
+        <div className="absolute top-20 left-20 w-72 h-72 bg-brand-purple/25 rounded-full blur-3xl animate-pulse-slow"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
             Aspire for Quality,<br />
-            <span className="bg-gradient-to-r from-white via-magenta-bright to-white bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white via-brand-purple to-brand-purple-soft bg-clip-text text-transparent">
               Built for Protection
             </span>
           </h2>
@@ -40,10 +40,10 @@ const Gallery = () => {
             <div
               key={index}
               onClick={() => handleCategoryClick(category.name)}
-              className="group relative cursor-pointer rounded-3xl overflow-hidden bg-purple-dark shadow-2xl hover:shadow-[0_0_50px_rgba(255,0,255,0.4)] transition-all duration-500 transform hover:-translate-y-4 border border-white/10 hover:border-magenta-bright/60"
+              className="group relative cursor-pointer rounded-2xl overflow-hidden bg-brand-graphite/80 shadow-xl transition-all duration-500 transform hover:-translate-y-4 border border-brand-line/60 hover:border-brand-purple"
             >
               <div className="relative h-80 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-primary via-purple-primary/50 to-transparent z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-brand-charcoal/60 to-transparent z-10"></div>
                 <ImageWithFallback
                   src={category.image}
                   alt={`${category.name} roofing`}
@@ -52,7 +52,7 @@ const Gallery = () => {
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                <div className="bg-gradient-to-r from-magenta-bright to-magenta-accent text-white font-extrabold py-3 px-8 rounded-full inline-block shadow-xl group-hover:scale-110 transition-transform uppercase tracking-wide">
+                <div className="bg-brand-purple text-white font-semibold py-3 px-8 rounded-xl inline-block shadow-lg group-hover:-translate-y-1 transition-transform uppercase tracking-wide">
                   {category.name}
                 </div>
               </div>

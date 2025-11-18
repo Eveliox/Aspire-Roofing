@@ -22,19 +22,19 @@ const WhyAspire = () => {
   }
 
   return (
-    <section className="bg-gradient-to-b from-purple-primary to-purple-dark py-20 md:py-32 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-brand-charcoal to-brand-ink py-20 md:py-32 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 right-20 w-72 h-72 bg-magenta-bright rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-72 h-72 bg-magenta-accent rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 opacity-20">
+        <div className="absolute top-20 right-20 w-72 h-72 bg-brand-purple/30 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-72 h-72 bg-brand-purple-soft/25 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left: Roof Image */}
           <div className="order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/50 to-transparent z-10"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group border border-white/5">
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/60 to-transparent z-10"></div>
               <ImageWithFallback
                 src="/images/Screenshot 2025-11-18 020304.png"
                 alt="Quality roofing"
@@ -56,7 +56,7 @@ const WhyAspire = () => {
             </p>
 
             {/* Form */}
-            <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-10 mb-10 border border-white/10 shadow-2xl">
+            <div className="bg-brand-graphite/80 backdrop-blur-md rounded-2xl p-8 md:p-10 mb-10 border border-brand-line/60 card-shadow">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 uppercase tracking-wide">Get A Free Estimate</h3>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
@@ -67,7 +67,7 @@ const WhyAspire = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-magenta-bright focus:ring-2 focus:ring-magenta-bright/50 transition-all backdrop-blur-sm"
+                    className="w-full px-6 py-4 rounded-xl bg-brand-charcoal border border-brand-line/60 text-white placeholder-white/50 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/40 transition-all"
                   />
                 </div>
                 <div>
@@ -78,7 +78,7 @@ const WhyAspire = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-magenta-bright focus:ring-2 focus:ring-magenta-bright/50 transition-all backdrop-blur-sm"
+                    className="w-full px-6 py-4 rounded-xl bg-brand-charcoal border border-brand-line/60 text-white placeholder-white/50 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/40 transition-all"
                   />
                 </div>
                 <div>
@@ -89,12 +89,12 @@ const WhyAspire = () => {
                     value={formData.address}
                     onChange={handleChange}
                     required
-                    className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-magenta-bright focus:ring-2 focus:ring-magenta-bright/50 transition-all backdrop-blur-sm"
+                    className="w-full px-6 py-4 rounded-xl bg-brand-charcoal border border-brand-line/60 text-white placeholder-white/50 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/40 transition-all"
                   />
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-magenta-bright to-magenta-accent hover:from-magenta-accent hover:to-magenta-bright text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-xl uppercase tracking-wide"
+                  className="w-full bg-brand-purple hover:bg-brand-purple-soft text-white font-semibold py-4 px-8 rounded-xl transition-all transform hover:-translate-y-0.5 shadow-lg uppercase tracking-wide"
                 >
                   Make an Appointment
                 </button>
@@ -103,16 +103,16 @@ const WhyAspire = () => {
 
             {/* Certifications Grid */}
             <div className="grid grid-cols-3 gap-4">
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 text-center border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all hover:bg-white/10">
-                <div className="text-magenta-bright font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
+              <div className="bg-brand-charcoal/80 backdrop-blur-sm rounded-xl p-5 text-center border border-brand-line/60 hover:border-brand-purple/60 transition-all hover:bg-brand-charcoal/90">
+                <div className="text-brand-purple font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
                 <div className="text-white text-xs font-medium">Polyglass</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 text-center border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all hover:bg-white/10">
-                <div className="text-magenta-bright font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
+              <div className="bg-brand-charcoal/80 backdrop-blur-sm rounded-xl p-5 text-center border border-brand-line/60 hover:border-brand-purple/60 transition-all hover:bg-brand-charcoal/90">
+                <div className="text-brand-purple font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
                 <div className="text-white text-xs font-medium">Elevate</div>
               </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 text-center border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all hover:bg-white/10">
-                <div className="text-magenta-bright font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
+              <div className="bg-brand-charcoal/80 backdrop-blur-sm rounded-xl p-5 text-center border border-brand-line/60 hover:border-brand-purple/60 transition-all hover:bg-brand-charcoal/90">
+                <div className="text-brand-purple font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
                 <div className="text-white text-xs font-medium">Soprema</div>
               </div>
             </div>
