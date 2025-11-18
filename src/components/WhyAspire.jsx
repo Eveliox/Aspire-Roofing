@@ -26,7 +26,7 @@ const WhyAspire = () => {
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-20 right-20 w-72 h-72 bg-brand-purple-light/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-72 h-72 bg-brand-purple-light/25 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 left-20 w-72 h-72 bg-brand-blue-light/25 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -94,7 +94,7 @@ const WhyAspire = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full bg-brand-purple-light hover:bg-brand-purple-soft text-white font-semibold py-4 px-8 transition-all transform hover:-translate-y-0.5 shadow-lg uppercase tracking-wide"
+                  className="w-full bg-brand-blue hover:bg-brand-purple text-white font-semibold py-4 px-8 transition-all transform hover:-translate-y-0.5 shadow-lg uppercase tracking-wide"
                 >
                   Make an Appointment
                 </button>
@@ -103,16 +103,16 @@ const WhyAspire = () => {
 
             {/* Certifications Grid */}
             <div className="grid grid-cols-3 gap-4">
-              <div className="bg-brand-grey-light/40 backdrop-blur-sm p-5 text-center border border-brand-grey/50 hover:border-brand-purple-light/60 transition-all hover:bg-brand-grey-light/50">
+              <div className="bg-brand-charcoal/80 backdrop-blur-sm p-5 text-center border border-brand-line/60 hover:border-brand-purple-light/60 transition-all hover:bg-brand-charcoal/90">
                 <div className="text-brand-purple-light font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
-                <div className="text-brand-grey-dark text-xs font-medium">Polyglass</div>
+                <div className="text-white text-xs font-medium">Polyglass</div>
               </div>
-              <div className="bg-brand-charcoal/80 backdrop-blur-sm p-5 text-center border border-brand-line/60 hover:border-brand-purple/60 transition-all hover:bg-brand-charcoal/90">
-                <div className="text-brand-purple font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
+              <div className="bg-brand-charcoal/80 backdrop-blur-sm p-5 text-center border border-brand-line/60 hover:border-brand-purple-light/60 transition-all hover:bg-brand-charcoal/90">
+                <div className="text-brand-purple-light font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
                 <div className="text-white text-xs font-medium">Elevate</div>
               </div>
-              <div className="bg-brand-charcoal/80 backdrop-blur-sm p-5 text-center border border-brand-line/60 hover:border-brand-purple/60 transition-all hover:bg-brand-charcoal/90">
-                <div className="text-brand-purple font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
+              <div className="bg-brand-charcoal/80 backdrop-blur-sm p-5 text-center border border-brand-line/60 hover:border-brand-purple-light/60 transition-all hover:bg-brand-charcoal/90">
+                <div className="text-brand-purple-light font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
                 <div className="text-white text-xs font-medium">Soprema</div>
               </div>
             </div>

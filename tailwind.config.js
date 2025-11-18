@@ -8,18 +8,27 @@ export default {
     extend: {
       colors: {
         'brand-ink': '#0b0d14',
-        'brand-charcoal': '#131722',
-        'brand-graphite': '#1f2432',
-        'brand-slate': '#2b3142',
-        'brand-line': '#2f3545',
+        'brand-charcoal': '#1a2332',
+        'brand-graphite': '#2a3441',
+        'brand-slate': '#3a4450',
+        'brand-line': '#4a5460',
         'brand-cloud': '#f4f4f5',
         'brand-steel': '#9ca3af',
-        'brand-purple': '#7c3aed',
-        'brand-purple-soft': '#a78bfa',
+        // Polyglass-inspired blue palette
+        'brand-blue': '#003366',        // Patriot Blue - primary
+        'brand-blue-dark': '#002244',    // Darker blue
+        'brand-blue-light': '#004C8C',   // Lighter blue
+        'brand-blue-soft': '#0066CC',    // Soft blue accent
+        'brand-blue-accent': '#0080FF',  // Bright accent blue
+        // Professional greys (Kool Grey inspired)
         'brand-grey': '#6b7280',
         'brand-grey-light': '#9ca3af',
         'brand-grey-dark': '#4b5563',
-        'brand-purple-light': '#c4b5fd',
+        'brand-kool-grey': '#5a6570',    // Kool Grey
+        // Purple accents
+        'brand-purple': '#7c3aed',       // Primary purple
+        'brand-purple-soft': '#a78bfa',  // Soft purple
+        'brand-purple-light': '#c4b5fd', // Light purple accent
         'brand-white': '#ffffff',
       },
       fontFamily: {

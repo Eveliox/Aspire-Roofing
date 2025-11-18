@@ -25,7 +25,7 @@ const Gallery = () => {
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-brand-grey-dark mb-6 leading-tight">
             Aspire for Quality,<br />
-            <span className="bg-gradient-to-r from-brand-grey-dark via-brand-purple-light to-brand-purple-soft bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-brand-grey-dark via-brand-blue-light to-brand-purple-light bg-clip-text text-transparent">
               Built for Protection
             </span>
           </h2>
@@ -52,7 +52,7 @@ const Gallery = () => {
                 />
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-                <div className="bg-brand-purple-light text-white font-semibold py-3 px-8 inline-block shadow-lg group-hover:-translate-y-1 transition-transform uppercase tracking-wide">
+                <div className="bg-brand-blue hover:bg-brand-purple text-white font-semibold py-3 px-8 inline-block shadow-lg group-hover:-translate-y-1 transition-transform uppercase tracking-wide">
                   {category.name}
                 </div>
               </div>

@@ -103,7 +103,7 @@ const Hero = () => {
       {/* Subtle accent lights */}
       <div className="absolute inset-0 overflow-hidden z-10 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-brand-purple-light/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-purple-light/15 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brand-blue-light/15 rounded-full blur-3xl"></div>
       </div>
 
       {/* Navigation Arrows */}
@@ -131,7 +131,7 @@ const Hero = () => {
         <div className="animate-slide-up">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-brand-grey-dark mb-8 leading-tight text-shadow-lg">
             STRONGER ROOFS,<br />
-            <span className="bg-gradient-to-r from-brand-grey-dark via-brand-purple-light to-brand-purple-soft bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-brand-grey-dark via-brand-blue-light to-brand-purple-light bg-clip-text text-transparent">
               BUILT RIGHT THE FIRST TIME
             </span>
           </h1>
@@ -147,7 +147,7 @@ const Hero = () => {
         <div className="animate-slide-up" style={{ animationDelay: '0.4s' }}>
           <a 
             href="#contact"
-            className="inline-block bg-brand-purple-light hover:bg-brand-purple-soft text-white font-semibold py-5 px-10 md:py-6 md:px-14 text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
+            className="inline-block bg-brand-blue hover:bg-brand-purple text-white font-semibold py-5 px-10 md:py-6 md:px-14 text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
           >
             CALL US FOR FREE ESTIMATE →
           </a>

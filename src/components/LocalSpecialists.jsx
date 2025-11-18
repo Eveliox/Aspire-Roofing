@@ -57,7 +57,7 @@ const LocalSpecialists = () => {
           <div className="order-1 lg:order-2">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-grey-dark mb-8 leading-tight">
               Your Local Roofing Specialists,<br />
-              <span className="bg-gradient-to-r from-brand-grey-dark via-brand-purple-light to-brand-purple-soft bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-grey-dark via-brand-blue-light to-brand-purple-light bg-clip-text text-transparent">
                 Built on Trust
               </span>
             </h2>
@@ -68,7 +68,7 @@ const LocalSpecialists = () => {
             </p>
             <a 
               href="#services"
-              className="inline-block bg-brand-purple-light hover:bg-brand-purple-soft text-white font-semibold py-5 px-10 text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
+              className="inline-block bg-brand-blue hover:bg-brand-purple text-white font-semibold py-5 px-10 text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
             >
               Learn More
             </a>
