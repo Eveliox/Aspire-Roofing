@@ -16,6 +16,11 @@ export default {
         'brand-steel': '#9ca3af',
         'brand-purple': '#7c3aed',
         'brand-purple-soft': '#a78bfa',
+        'brand-grey': '#6b7280',
+        'brand-grey-light': '#9ca3af',
+        'brand-grey-dark': '#4b5563',
+        'brand-purple-light': '#c4b5fd',
+        'brand-white': '#ffffff',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

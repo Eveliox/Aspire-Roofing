@@ -10,19 +10,19 @@ const Services = () => {
   ]
 
   return (
-    <section id="services" className="bg-gradient-to-b from-brand-ink to-brand-charcoal py-20 md:py-32 relative overflow-hidden">
+    <section id="services" className="bg-gradient-to-b from-brand-white to-brand-grey-light/30 py-20 md:py-32 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-purple/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-purple-soft/15 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-brand-purple-light/25 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-brand-purple-light/20 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 uppercase tracking-tight">
+          <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-brand-grey-dark mb-6 uppercase tracking-tight">
             SERVICES
           </h2>
-          <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light">
+          <p className="text-brand-grey-dark/90 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light">
             We offer comprehensive roofing solutions tailored to your needs. From installation to repair, 
             our expert team handles every aspect of your roofing project with precision and care.
           </p>
@@ -32,7 +32,7 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-brand-graphite/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl transition-all duration-500 transform hover:-translate-y-3 border border-brand-line/60 hover:border-brand-purple"
+              className="group bg-brand-grey-light/40 backdrop-blur-sm overflow-hidden shadow-xl transition-all duration-500 transform hover:-translate-y-3 border border-brand-grey/50 hover:border-brand-purple-light"
             >
               <div className="relative h-72 overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/85 to-transparent z-10"></div>
@@ -43,8 +43,8 @@ const Services = () => {
                   placeholderText={service.name}
                 />
               </div>
-              <div className="p-8 bg-brand-charcoal/80">
-                <h3 className="text-xl font-semibold text-white text-center uppercase tracking-wide">{service.name}</h3>
+              <div className="p-8 bg-brand-grey-light/40">
+                <h3 className="text-xl font-semibold text-brand-grey-dark text-center uppercase tracking-wide">{service.name}</h3>
               </div>
             </div>
           ))}

@@ -3,10 +3,10 @@ import ImageWithFallback from './ImageWithFallback'
 
 const LocalSpecialists = () => {
   return (
-    <section className="bg-gradient-to-b from-brand-charcoal to-brand-ink py-20 md:py-32 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-brand-grey-light/20 to-brand-white py-20 md:py-32 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-purple/25 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-purple-light/30 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -14,7 +14,7 @@ const LocalSpecialists = () => {
           {/* Left: 2x2 Grid of Roof Photos */}
           <div className="order-2 lg:order-1">
             <div className="grid grid-cols-2 gap-6">
-              <div className="relative rounded-xl overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-line/60 hover:border-brand-purple">
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-grey/50 hover:border-brand-purple-light">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-1.jpg"
@@ -23,7 +23,7 @@ const LocalSpecialists = () => {
                   placeholderText="Roof 1"
                 />
               </div>
-              <div className="relative rounded-xl overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-line/60 hover:border-brand-purple">
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-grey/50 hover:border-brand-purple-light">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-2.jpg"
@@ -32,7 +32,7 @@ const LocalSpecialists = () => {
                   placeholderText="Roof 2"
                 />
               </div>
-              <div className="relative rounded-xl overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-line/60 hover:border-brand-purple">
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-grey/50 hover:border-brand-purple-light">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-3.jpg"
@@ -41,7 +41,7 @@ const LocalSpecialists = () => {
                   placeholderText="Roof 3"
                 />
               </div>
-              <div className="relative rounded-xl overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-line/60 hover:border-brand-purple">
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-grey/50 hover:border-brand-purple-light">
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-charcoal/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-4.jpg"
@@ -55,20 +55,20 @@ const LocalSpecialists = () => {
 
           {/* Right: Content */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-grey-dark mb-8 leading-tight">
               Your Local Roofing Specialists,<br />
-              <span className="bg-gradient-to-r from-white via-brand-purple to-brand-purple-soft bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-grey-dark via-brand-purple-light to-brand-purple-soft bg-clip-text text-transparent">
                 Built on Trust
               </span>
             </h2>
-            <p className="text-white/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
+            <p className="text-brand-grey-dark/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
               With years of experience serving South Florida, we've built our reputation on trust, 
               quality craftsmanship, and exceptional customer service. Every project is handled with 
               care and attention to detail, ensuring your roof protects your home for years to come.
             </p>
             <a 
               href="#services"
-              className="inline-block bg-brand-purple hover:bg-brand-purple-soft text-white font-semibold py-5 px-10 rounded-xl text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
+              className="inline-block bg-brand-purple-light hover:bg-brand-purple-soft text-white font-semibold py-5 px-10 text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
             >
               Learn More
             </a>
