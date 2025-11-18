@@ -1,6 +1,7 @@
 {
   "name": "aspire-roofing",
   "version": "1.0.0",
+  "type": "module",
   "description": "Aspire Roofing Company Website",
   "scripts": {
     "dev": "vite",

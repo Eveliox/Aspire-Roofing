@@ -36,7 +36,7 @@ const WhyAspire = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
               <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/50 to-transparent z-10"></div>
               <ImageWithFallback
-                src="/images/why-aspire-roof.jpg"
+                src="/images/Screenshot 2025-11-18 020304.png"
                 alt="Quality roofing"
                 className="w-full h-[400px] md:h-[600px] object-cover group-hover:scale-110 transition-transform duration-700"
                 placeholderText="Roof Image"

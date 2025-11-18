@@ -20,6 +20,8 @@ export default {
         'fade-in': 'fadeIn 0.6s ease-in-out',
         'slide-up': 'slideUp 0.6s ease-out',
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'ken-burns': 'kenBurns 20s ease-in-out infinite',
+        'progress': 'progress 6s linear forwards',
       },
       keyframes: {
         fadeIn: {
@@ -29,6 +31,14 @@ export default {
         slideUp: {
           '0%': { transform: 'translateY(20px)', opacity: '0' },
           '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        kenBurns: {
+          '0%, 100%': { transform: 'scale(1) translate(0, 0)' },
+          '50%': { transform: 'scale(1.1) translate(-2%, -2%)' },
+        },
+        progress: {
+          '0%': { width: '0%' },
+          '100%': { width: '100%' },
         },
       },
       backdropBlur: {
