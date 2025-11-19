@@ -7,20 +7,30 @@ export default {
   theme: {
     extend: {
       colors: {
-        'brand-ink': '#0b0d14',
-        'brand-charcoal': '#131722',
-        'brand-graphite': '#1f2432',
-        'brand-slate': '#2b3142',
-        'brand-line': '#2f3545',
-        'brand-cloud': '#f4f4f5',
-        'brand-steel': '#9ca3af',
+        // Black shades
+        'brand-black': '#000000',
+        'brand-black-dark': '#0a0a0a',
+        'brand-black-light': '#1a1a1a',
+        'brand-charcoal': '#2a2a2a',
+        'brand-graphite': '#3a3a3a',
+        // White shades
+        'brand-white': '#ffffff',
+        'brand-white-off': '#f8f8f8',
+        'brand-cloud': '#f0f0f0',
+        // Purple shades
         'brand-purple': '#7c3aed',
-        'brand-purple-soft': '#a78bfa',
+        'brand-purple-dark': '#5b21b6',
+        'brand-purple-light': '#a78bfa',
+        'brand-purple-soft': '#c4b5fd',
+        'brand-purple-lighter': '#ddd6fe',
+        // Legacy support (mapping to new colors)
+        'brand-ink': '#000000',
+        'brand-slate': '#2a2a2a',
+        'brand-line': '#3a3a3a',
+        'brand-steel': '#6b7280',
         'brand-grey': '#6b7280',
         'brand-grey-light': '#9ca3af',
-        'brand-grey-dark': '#4b5563',
-        'brand-purple-light': '#c4b5fd',
-        'brand-white': '#ffffff',
+        'brand-grey-dark': '#1a1a1a',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],
