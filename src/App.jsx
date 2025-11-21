@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="min-h-screen bg-purple-dark">
+    <div className="min-h-screen bg-brand-white">
       <Navbar />
       <Hero />
       <WhyAspire />

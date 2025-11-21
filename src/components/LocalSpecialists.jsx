@@ -3,10 +3,10 @@ import ImageWithFallback from './ImageWithFallback'
 
 const LocalSpecialists = () => {
   return (
-    <section className="bg-gradient-to-b from-purple-primary to-purple-dark py-20 md:py-32 relative overflow-hidden">
+    <section className="bg-gradient-to-b from-brand-white-off to-brand-white py-20 md:py-32 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-magenta-bright rounded-full blur-3xl"></div>
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute bottom-20 right-20 w-96 h-96 bg-brand-purple/30 rounded-full blur-3xl"></div>
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -14,8 +14,8 @@ const LocalSpecialists = () => {
           {/* Left: 2x2 Grid of Roof Photos */}
           <div className="order-2 lg:order-1">
             <div className="grid grid-cols-2 gap-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(255,0,255,0.3)] transition-all duration-500 transform hover:-translate-y-2 border border-white/10">
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/60 to-transparent z-10"></div>
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-charcoal/50 hover:border-brand-purple">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-1.jpg"
                   alt="Roofing work"
@@ -23,8 +23,8 @@ const LocalSpecialists = () => {
                   placeholderText="Roof 1"
                 />
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(255,0,255,0.3)] transition-all duration-500 transform hover:-translate-y-2 border border-white/10">
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/60 to-transparent z-10"></div>
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-charcoal/50 hover:border-brand-purple">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-2.jpg"
                   alt="Roofing work"
@@ -32,8 +32,8 @@ const LocalSpecialists = () => {
                   placeholderText="Roof 2"
                 />
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(255,0,255,0.3)] transition-all duration-500 transform hover:-translate-y-2 border border-white/10">
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/60 to-transparent z-10"></div>
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-charcoal/50 hover:border-brand-purple">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-3.jpg"
                   alt="Roofing work"
@@ -41,8 +41,8 @@ const LocalSpecialists = () => {
                   placeholderText="Roof 3"
                 />
               </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group hover:shadow-[0_0_30px_rgba(255,0,255,0.3)] transition-all duration-500 transform hover:-translate-y-2 border border-white/10">
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/60 to-transparent z-10"></div>
+              <div className="relative overflow-hidden shadow-xl group transition-all duration-500 transform hover:-translate-y-2 border border-brand-charcoal/50 hover:border-brand-purple">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/70 to-transparent z-10"></div>
                 <ImageWithFallback
                   src="/images/roof-4.jpg"
                   alt="Roofing work"
@@ -55,20 +55,20 @@ const LocalSpecialists = () => {
 
           {/* Right: Content */}
           <div className="order-1 lg:order-2">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-8 leading-tight">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-black mb-8 leading-tight">
               Your Local Roofing Specialists,<br />
-              <span className="bg-gradient-to-r from-white via-magenta-bright to-white bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-brand-black via-brand-purple to-brand-purple-light bg-clip-text text-transparent">
                 Built on Trust
               </span>
             </h2>
-            <p className="text-white/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
+            <p className="text-brand-black/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
               With years of experience serving South Florida, we've built our reputation on trust, 
               quality craftsmanship, and exceptional customer service. Every project is handled with 
               care and attention to detail, ensuring your roof protects your home for years to come.
             </p>
             <a 
               href="#services"
-              className="inline-block bg-gradient-to-r from-magenta-bright to-magenta-accent hover:from-magenta-accent hover:to-magenta-bright text-white font-bold py-5 px-10 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 shadow-2xl glow-hover uppercase tracking-wide"
+              className="inline-block bg-brand-purple hover:bg-brand-purple-dark text-brand-white font-semibold py-5 px-10 text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
             >
               Learn More
             </a>

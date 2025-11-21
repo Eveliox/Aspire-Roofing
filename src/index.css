@@ -16,6 +16,8 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #f9fafb;
+    color: #1f2937;
   }
 
   * {
@@ -32,12 +34,8 @@
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   }
   
-  .glow {
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
-  }
-  
-  .glow-hover:hover {
-    box-shadow: 0 0 30px rgba(255, 0, 255, 0.5);
+  .card-shadow {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
   }
 }
 
