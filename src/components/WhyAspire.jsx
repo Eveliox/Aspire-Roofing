@@ -90,11 +90,7 @@ const WhyAspire = () => {
   }
 
   return (
-<<<<<<< Updated upstream
-    <section className="bg-gradient-to-b from-purple-primary to-purple-dark py-20 md:py-32 relative overflow-hidden">
-=======
     <section id="form" className="bg-brand-white py-20 md:py-32 relative overflow-hidden">
->>>>>>> Stashed changes
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 right-20 w-72 h-72 bg-magenta-bright rounded-full blur-3xl"></div>
@@ -106,7 +102,7 @@ const WhyAspire = () => {
           {/* Left: Roof Image */}
           <div className="order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
-              <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/50 to-transparent z-10"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-purple-medium/50 to-transparent z-10"></div>
               <ImageWithFallback
                 src="/images/Screenshot 2025-11-18 020304.png"
                 alt="Quality roofing"
@@ -118,21 +114,6 @@ const WhyAspire = () => {
 
           {/* Right: Content and Form */}
           <div className="order-1 lg:order-2">
-<<<<<<< Updated upstream
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-              Choose Aspire Roofing for all your roofing needs
-            </h2>
-            <p className="text-white/90 text-lg md:text-xl mb-10 leading-relaxed font-light">
-              We provide dependable roofing services with a commitment to quality and excellence. 
-              Our experienced team ensures every project is completed to the highest standards, 
-              giving you peace of mind and a roof that lasts.
-            </p>
-
-            {/* Form */}
-            <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-10 mb-10 border border-white/10 shadow-2xl">
-              <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 uppercase tracking-wide">Get A Free Estimate</h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
-=======
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-4 sm:mb-6 leading-tight">
               Choose Aspire Roofing for all your roofing needs
             </h2>
@@ -154,7 +135,6 @@ const WhyAspire = () => {
                 onSubmit={handleSubmit} 
                 className="space-y-5"
               >
->>>>>>> Stashed changes
                 <div>
                   <input
                     type="text"
@@ -163,12 +143,8 @@ const WhyAspire = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-<<<<<<< Updated upstream
-                    className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-magenta-bright focus:ring-2 focus:ring-magenta-bright/50 transition-all backdrop-blur-sm"
-=======
                     disabled={isSubmitting}
                     className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-brand-purple-medium border border-brand-purple/30 text-black placeholder-black/50 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
->>>>>>> Stashed changes
                   />
                 </div>
                 <div>
@@ -179,12 +155,8 @@ const WhyAspire = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-<<<<<<< Updated upstream
-                    className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-magenta-bright focus:ring-2 focus:ring-magenta-bright/50 transition-all backdrop-blur-sm"
-=======
                     disabled={isSubmitting}
                     className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-brand-purple-medium border border-brand-purple/30 text-black placeholder-black/50 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
->>>>>>> Stashed changes
                   />
                 </div>
                 <div>
@@ -195,12 +167,8 @@ const WhyAspire = () => {
                     value={formData.address}
                     onChange={handleChange}
                     required
-<<<<<<< Updated upstream
-                    className="w-full px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:border-magenta-bright focus:ring-2 focus:ring-magenta-bright/50 transition-all backdrop-blur-sm"
-=======
                     disabled={isSubmitting}
                     className="w-full px-4 sm:px-6 py-3 sm:py-4 bg-brand-purple-medium border border-brand-purple/30 text-black placeholder-black/50 focus:outline-none focus:border-brand-purple focus:ring-2 focus:ring-brand-purple/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
->>>>>>> Stashed changes
                   />
                 </div>
                 {submitStatus === 'success' && (
@@ -215,12 +183,8 @@ const WhyAspire = () => {
                 )}
                 <button
                   type="submit"
-<<<<<<< Updated upstream
-                  className="w-full bg-gradient-to-r from-magenta-bright to-magenta-accent hover:from-magenta-accent hover:to-magenta-bright text-white font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 shadow-xl uppercase tracking-wide"
-=======
                   disabled={isSubmitting}
                   className="w-full bg-brand-purple hover:bg-brand-purple-dark text-brand-white font-semibold py-4 px-8 transition-all transform hover:-translate-y-0.5 shadow-lg uppercase tracking-wide disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
->>>>>>> Stashed changes
                 >
                   {isSubmitting ? 'Submitting...' : 'Send a Message'}
                 </button>
@@ -228,20 +192,6 @@ const WhyAspire = () => {
             </div>
 
             {/* Certifications Grid */}
-<<<<<<< Updated upstream
-            <div className="grid grid-cols-3 gap-4">
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 text-center border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all hover:bg-white/10">
-                <div className="text-magenta-bright font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
-                <div className="text-white text-xs font-medium">Polyglass</div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 text-center border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all hover:bg-white/10">
-                <div className="text-magenta-bright font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
-                <div className="text-white text-xs font-medium">Elevate</div>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm rounded-xl p-5 text-center border border-magenta-bright/30 hover:border-magenta-bright/60 transition-all hover:bg-white/10">
-                <div className="text-magenta-bright font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
-                <div className="text-white text-xs font-medium">Soprema</div>
-=======
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               <div className="bg-brand-purple-medium backdrop-blur-sm p-5 text-center border border-brand-purple/40 hover:border-brand-purple transition-all hover:bg-brand-purple-soft">
                 <div className="text-brand-purple font-bold text-sm mb-2 uppercase tracking-wide">Certified</div>
@@ -258,7 +208,6 @@ const WhyAspire = () => {
               <div className="bg-brand-purple-medium backdrop-blur-sm p-5 text-center border border-brand-purple/40 hover:border-brand-purple transition-all hover:bg-brand-purple-soft">
                 <div className="text-brand-purple font-bold text-sm mb-2 uppercase tracking-wide">License</div>
                 <div className="text-white text-xs font-medium">CCC133657</div>
->>>>>>> Stashed changes
               </div>
             </div>
           </div>

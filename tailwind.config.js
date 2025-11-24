@@ -7,13 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-<<<<<<< Updated upstream
+        // Legacy colors (for backward compatibility)
         'purple-dark': '#2d1b4e',
         'purple-primary': '#4c1d95',
         'purple-logo': '#6d28d9',
         'magenta-bright': '#ff00ff',
         'magenta-accent': '#ff00cc',
-=======
         // Dark purple shades (replacing black)
         'brand-black': '#1e1b4b', // Very dark purple
         'brand-black-dark': '#0f172a', // Darkest purple
@@ -41,7 +40,6 @@ export default {
         'brand-grey': '#6366f1',
         'brand-grey-light': '#818cf8',
         'brand-grey-dark': '#312e81',
->>>>>>> Stashed changes
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

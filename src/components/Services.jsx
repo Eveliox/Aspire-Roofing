@@ -59,11 +59,7 @@ const Services = () => {
   }, [selectedService])
 
   return (
-<<<<<<< Updated upstream
-    <section id="services" className="bg-gradient-to-b from-purple-dark to-purple-primary py-20 md:py-32 relative overflow-hidden">
-=======
     <section id="services" className="bg-brand-white py-20 md:py-32 relative overflow-hidden">
->>>>>>> Stashed changes
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-magenta-bright rounded-full blur-3xl"></div>
@@ -72,25 +68,16 @@ const Services = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
-<<<<<<< Updated upstream
-          <h2 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 uppercase tracking-tight">
-            SERVICES
-          </h2>
-          <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light">
-            We offer comprehensive roofing solutions tailored to your needs. From installation to repair, 
-            our expert team handles every aspect of your roofing project with precision and care.
-=======
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 sm:mb-6 uppercase tracking-tight">
             SERVICES
           </h2>
           <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light px-4">
-          At Aspire Roofing, we believe a roof is more than just protection—it’s peace of mind. That’s why we handle every step of the process with care, from
+          At Aspire Roofing, we believe a roof is more than just protection—it's peace of mind. That's why we handle every step of the process with care, from
           tearing off the old roof to drying in and completing the final installation. With expertise in both residential and commercial roofing, we bring precision,
           reliability, and craftsmanship to every project.
 
-          We only use high-quality materials and follow all building codes to ensure your roof is safe, durable, and built to last. Whether it’s a home or a
+          We only use high-quality materials and follow all building codes to ensure your roof is safe, durable, and built to last. Whether it's a home or a
           business, Aspire Roofing provides solutions that combine strength, safety, and style.
->>>>>>> Stashed changes
           </p>
         </div>
 
@@ -98,15 +85,11 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-<<<<<<< Updated upstream
-              className="group bg-white/5 backdrop-blur-sm rounded-3xl overflow-hidden shadow-2xl hover:shadow-[0_0_40px_rgba(255,0,255,0.3)] transition-all duration-500 transform hover:-translate-y-3 border border-white/10 hover:border-magenta-bright/50"
-=======
               onClick={() => setSelectedService(service)}
               className="group bg-brand-purple-medium/80 backdrop-blur-sm overflow-hidden shadow-xl transition-all duration-500 transform hover:-translate-y-3 border border-brand-purple/30 hover:border-brand-purple cursor-pointer"
->>>>>>> Stashed changes
             >
               <div className="relative h-72 overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-primary/80 to-transparent z-10"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-black/85 to-transparent z-10"></div>
                 <ImageWithFallback
                   src={service.image}
                   alt={service.name}
@@ -114,13 +97,8 @@ const Services = () => {
                   placeholderText={service.name}
                 />
               </div>
-<<<<<<< Updated upstream
-              <div className="p-8 bg-gradient-to-b from-purple-primary/50 to-purple-dark/50">
-                <h3 className="text-xl font-extrabold text-white text-center uppercase tracking-wide">{service.name}</h3>
-=======
               <div className="p-8 bg-brand-purple-medium/80">
                 <h3 className="text-xl font-semibold text-white text-center uppercase tracking-wide">{service.name}</h3>
->>>>>>> Stashed changes
               </div>
             </div>
           ))}

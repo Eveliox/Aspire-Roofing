@@ -17,8 +17,6 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-<<<<<<< Updated upstream
-=======
     background-color: #4B0082;
     color: #ffffff;
   }
@@ -33,7 +31,6 @@
   .font-semibold,
   .font-extrabold {
     font-family: 'Poppins', sans-serif;
->>>>>>> Stashed changes
   }
 
   * {
