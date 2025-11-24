@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,6 +17,23 @@
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+<<<<<<< Updated upstream
+=======
+    background-color: #4B0082;
+    color: #ffffff;
+  }
+
+  /* Apply Poppins to all headers */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Apply Poppins to bold text */
+  .font-bold,
+  .font-semibold,
+  .font-extrabold {
+    font-family: 'Poppins', sans-serif;
+>>>>>>> Stashed changes
   }
 
   * {

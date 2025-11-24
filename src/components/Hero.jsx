@@ -97,10 +97,14 @@ const Hero = () => {
         ))}
       </div>
 
+<<<<<<< Updated upstream
       {/* Gradient Overlay - Minimal to show images clearly */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-primary/15 via-purple-primary/10 to-purple-dark/20 z-10"></div>
       
       {/* Animated Background Elements - Reduced opacity */}
+=======
+      {/* Subtle accent lights */}
+>>>>>>> Stashed changes
       <div className="absolute inset-0 overflow-hidden z-10 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-magenta-bright/5 rounded-full blur-3xl animate-pulse-slow"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-magenta-accent/5 rounded-full blur-3xl animate-pulse-slow" style={{ animationDelay: '1s' }}></div>
@@ -109,19 +113,33 @@ const Hero = () => {
       {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
+<<<<<<< Updated upstream
         className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full p-3 md:p-4 transition-all duration-300 group border border-white/20 hover:border-white/40"
         aria-label="Previous slide"
       >
         <svg className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-magenta-bright transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+=======
+        className="absolute left-2 sm:left-4 md:left-8 top-1/2 -translate-y-1/2 z-30 bg-white/5 hover:bg-white/15 backdrop-blur-md rounded-full p-2 sm:p-3 md:p-4 transition-all duration-300 group border border-white/10 hover:border-white/30"
+        aria-label="Previous slide"
+      >
+        <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white group-hover:text-brand-purple transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+>>>>>>> Stashed changes
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
       <button
         onClick={nextSlide}
+<<<<<<< Updated upstream
         className="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-full p-3 md:p-4 transition-all duration-300 group border border-white/20 hover:border-white/40"
         aria-label="Next slide"
       >
         <svg className="w-6 h-6 md:w-8 md:h-8 text-white group-hover:text-magenta-bright transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+=======
+        className="absolute right-2 sm:right-4 md:right-8 top-1/2 -translate-y-1/2 z-30 bg-white/5 hover:bg-white/15 backdrop-blur-md rounded-full p-2 sm:p-3 md:p-4 transition-all duration-300 group border border-white/10 hover:border-white/30"
+        aria-label="Next slide"
+      >
+        <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white group-hover:text-brand-purple transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+>>>>>>> Stashed changes
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>
@@ -129,7 +147,11 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
         <div className="animate-slide-up">
+<<<<<<< Updated upstream
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-8 leading-tight text-shadow-lg">
+=======
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold text-white mb-6 sm:mb-8 leading-tight px-4">
+>>>>>>> Stashed changes
             STRONGER ROOFS,<br />
             <span className="bg-gradient-to-r from-white via-magenta-bright to-white bg-clip-text text-transparent">
               BUILT RIGHT THE FIRST TIME
@@ -137,19 +159,30 @@ const Hero = () => {
           </h1>
         </div>
         
+<<<<<<< Updated upstream
         <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-10 mb-10 max-w-4xl mx-auto border border-white/10 shadow-2xl animate-slide-up" style={{ animationDelay: '0.2s' }}>
           <p className="text-white text-xl md:text-2xl leading-relaxed font-light">
             From shingle and tile to metal and flat roofs, we handle everything—permits, inspection, installation, and cleanup. 
             Your trusted roofing partner for quality workmanship and reliable service.
+=======
+        <div className="bg-brand-purple-medium/80 backdrop-blur-xl p-6 sm:p-8 md:p-10 mb-8 sm:mb-10 max-w-4xl mx-auto border border-brand-purple/30 card-shadow animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-white text-lg sm:text-xl md:text-2xl leading-relaxed font-light">
+            Protect your property with professional shingle, tile, metal, and flat-roof services. We handle everything—inspections, permits, installation, and cleanup—so you stay stress-free.
+>>>>>>> Stashed changes
           </p>
         </div>
 
         <div className="animate-slide-up" style={{ animationDelay: '0.4s' }}>
           <a 
+<<<<<<< Updated upstream
             href="#contact"
             className="inline-block bg-gradient-to-r from-magenta-bright to-magenta-accent hover:from-magenta-accent hover:to-magenta-bright text-white font-bold py-5 px-10 md:py-6 md:px-14 rounded-full text-lg md:text-xl transition-all transform hover:scale-105 shadow-2xl glow-hover uppercase tracking-wide"
+=======
+            href="#form"
+            className="inline-block bg-brand-purple hover:bg-brand-purple-dark text-brand-white font-semibold py-4 px-8 sm:py-5 sm:px-10 md:py-6 md:px-14 text-base sm:text-lg md:text-xl transition-all transform hover:-translate-y-1 shadow-xl uppercase tracking-wide"
+>>>>>>> Stashed changes
           >
-            CALL US FOR FREE ESTIMATE →
+            CONTACT US FOR A FREE ESTIMATE →
           </a>
         </div>
       </div>
