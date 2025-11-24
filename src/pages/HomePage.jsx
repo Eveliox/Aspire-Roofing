@@ -39,7 +39,7 @@ const HomePage = () => {
         <div className="fixed inset-0 bg-brand-white z-50 flex items-center justify-center transition-opacity duration-500">
           <div className="flex flex-col items-center">
             <img
-              src="/Logo.png"
+              src="/Logo (1).png"
               alt="Aspire Roofing Logo"
               className="h-24 md:h-32 w-auto animate-pulse"
             />

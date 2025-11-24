@@ -141,44 +141,42 @@ const Gallery = () => {
 
   return (
 
-    <section id="gallery" className="bg-brand-white py-20 md:py-32 relative overflow-hidden">
+    <section id="gallery" className="bg-brand-white relative overflow-hidden">
 
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-72 h-72 bg-magenta-bright rounded-full blur-3xl animate-pulse-slow"></div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container relative z-10">
         <div className="text-center mb-16">
-
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-4 sm:mb-6 leading-tight px-4">
+          <h2 className="font-extrabold text-white text-shadow-lg">
             Aspire for Quality,<br />
             <span className="text-white">
               Built for Protection
             </span>
           </h2>
-          <p className="text-white/90 text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed font-light px-4">
-          Welcome to Aspire Roofing, where expert craftsmanship meets trust and long-lasting protection. Explore our portfolio of residential and
-          commercial roofing projects across South Florida each one built with precision, integrity, and care. From shingle to tile, metal, and flat
-          roofs, every project showcases our dedication to delivering durable, code-compliant roofing solutions that stand the test of time.
+          <p className="text-white/90 max-w-3xl mx-auto leading-relaxed font-light mt-6">
+            Welcome to Aspire Roofing, where expert craftsmanship meets trust and long-lasting protection. Explore our portfolio of residential and
+            commercial roofing projects across South Florida each one built with precision, integrity, and care. From shingle to tile, metal, and flat
+            roofs, every project showcases our dedication to delivering durable, code-compliant roofing solutions that stand the test of time.
           </p>
         </div>
 
         {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 px-4">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           {categories.map((category) => (
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 sm:px-6 py-2 sm:py-3 font-semibold text-xs sm:text-sm uppercase tracking-wide transition-all duration-300 ${
+              className={`btn-primary ${
                 selectedCategory === category
-                  ? 'bg-brand-purple text-brand-white shadow-lg'
-                  : 'bg-brand-purple-medium/80 text-white hover:bg-brand-purple/20 border border-brand-purple/30'
+                  ? ''
+                  : '!bg-purple-medium/80 !text-white hover:!bg-purple-medium'
               }`}
             >
               {category}
             </button>
-
           ))}
         </div>
 
@@ -189,14 +187,14 @@ const Gallery = () => {
               <div
                 key={index}
                 onClick={() => setSelectedImage(image)}
-                className="group bg-brand-purple-medium/80 backdrop-blur-sm overflow-hidden shadow-xl transition-all duration-500 transform hover:-translate-y-3 border border-brand-purple/30 hover:border-brand-purple cursor-pointer"
+                className="card cursor-pointer overflow-hidden p-0"
               >
                 <div className="relative h-72 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-black/85 to-transparent z-10"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-purple-dark/85 to-transparent z-10"></div>
                   <ImageWithFallback
                     src={image}
                     alt={`${selectedCategory} roofing project ${index + 1}`}
-                    className="w-full h-full object-cover group-hover:scale-125 transition-transform duration-700"
+                    className="w-full h-full object-cover"
                     placeholderText={`${selectedCategory} ${index + 1}`}
                   />
                 </div>
