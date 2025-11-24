@@ -9,7 +9,6 @@ const Hero = () => {
   ]
 
   const [currentSlide, setCurrentSlide] = useState(0)
-  const [isPaused, setIsPaused] = useState(false)
 
   const goToSlide = (index) => {
     setCurrentSlide(index)
@@ -25,14 +24,12 @@ const Hero = () => {
 
   // Auto-play slideshow
   useEffect(() => {
-    if (isPaused) return
-
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length)
     }, 6000) // Change slide every 6 seconds
 
     return () => clearInterval(interval)
-  }, [isPaused, slides.length])
+  }, [slides.length])
 
   // Keyboard navigation
   useEffect(() => {
@@ -50,8 +47,6 @@ const Hero = () => {
       id="home"
       className="relative w-full min-h-[90vh] flex items-center justify-center bg-purple-dark overflow-hidden"
       style={{ padding: '0' }}
-      onMouseEnter={() => setIsPaused(true)}
-      onMouseLeave={() => setIsPaused(false)}
     >
       {/* Slideshow Background Images with Ken Burns Effect */}
       <div className="absolute inset-0 z-0">

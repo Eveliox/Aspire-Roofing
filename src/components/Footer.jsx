@@ -66,7 +66,7 @@ const Footer = () => {
         </div>
 
         {/* Fourth Column: Copyright */}
-        <div className="col-span-full mt-8 pt-8 border-t border-white/10 text-center">
+        <div className="col-span-full mt-8 pt-8 border-t border-white/10 flex flex-col items-center justify-center text-center">
           <p className="text-white/60">&copy; {new Date().getFullYear()} Aspire Roofing. All rights reserved.</p>
           <p className="text-white/50 mt-2">
             by{' '}
